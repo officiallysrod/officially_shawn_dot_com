@@ -3,6 +3,7 @@ configure :development do
 end
 
 activate :sprockets
+activate :autoprefixer
 
 if defined? RailsAssets
   RailsAssets.load_paths.each { |path| sprockets.append_path path }
