@@ -105,6 +105,8 @@ GEM
     rack (1.6.4)
     rack-livereload (0.3.16)
       rack
+    rails-assets-flexslider (2.6.1)
+      rails-assets-jquery (>= 1.11.3)
     rails-assets-jquery (3.1.0)
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
@@ -133,6 +135,7 @@ DEPENDENCIES
   middleman-livereload
   middleman-sprockets (~> 4.0)
   neat
+  rails-assets-flexslider!
   rails-assets-jquery!
 
 BUNDLED WITH

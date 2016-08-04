@@ -11,4 +11,5 @@ gem "font-awesome-sass"
 
 source "https://rails-assets.org" do
   gem "rails-assets-jquery"
+  gem "rails-assets-flexslider"
 end
