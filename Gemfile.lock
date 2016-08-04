@@ -108,6 +108,7 @@ GEM
     rails-assets-flexslider (2.6.1)
       rails-assets-jquery (>= 1.11.3)
     rails-assets-jquery (3.1.0)
+    rails-assets-typed.js (1.1.4)
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
@@ -137,6 +138,7 @@ DEPENDENCIES
   neat
   rails-assets-flexslider!
   rails-assets-jquery!
+  rails-assets-typed.js!
 
 BUNDLED WITH
    1.11.2

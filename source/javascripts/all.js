@@ -1,3 +1,4 @@
 //= require jquery
-//= require flexslider
+//= require typed.js.js
 //= require navbar
+//= require hero-typer

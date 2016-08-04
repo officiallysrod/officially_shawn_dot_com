@@ -1,0 +1,51 @@
+.hero {
+  @include outer-container(100%);
+  align-items: stretch;
+  background: image-url("background-image.jpg");
+  background-position: right;
+  background-size: none;
+  display: flex;
+  justify-content: center;
+  min-height: 25em;
+  padding: 2em;
+
+  @include media($large-screen) {
+    background-position: left;
+    background-size: cover;
+    min-height: 35em;
+  }
+
+  .hero-content {
+    @include span-columns(11);
+    align-items: center;
+    color: $font-color-white;
+    display: flex;
+    justify-content: center;
+
+    h1 {
+      font-size: 2em;
+
+      @include media($large-screen) {
+        font-size: 4em;
+      }
+    }
+
+
+  }
+
+  .hero-logo {
+    margin: auto;
+  }
+}
+
+.typed-cursor {
+  animation: blink 0.7s infinite;
+  opacity: 1;
+
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+}
