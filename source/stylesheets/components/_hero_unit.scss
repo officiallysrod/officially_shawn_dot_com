@@ -1,41 +1,42 @@
 .hero {
   @include outer-container(100%);
   align-items: stretch;
-  background: image-url("background-image.jpg");
-  background-position: right;
-  background-size: none;
+  background: image-url("shawn-normal.jpg");
+  background-size: cover;
   display: flex;
   justify-content: center;
   min-height: 25em;
   padding: 2em;
 
   @include media($large-screen) {
+    background: image-url("shawn-wide.jpg");
     background-position: left;
     background-size: cover;
     min-height: 35em;
   }
 
   .hero-content {
-    @include span-columns(11);
-    align-items: center;
+    @include span-columns(12);
+    align-items: flex-end;
     color: $font-color-white;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    text-align: center;
 
     h1 {
       font-size: 2em;
+    }
 
-      @include media($large-screen) {
-        font-size: 4em;
+    @include media($large-screen) {
+      justify-content: center;
+
+      h1 {
+        font-size: 4.5em;
       }
     }
 
-
   }
 
-  .hero-logo {
-    margin: auto;
-  }
 }
 
 .typed-cursor {

@@ -9,11 +9,10 @@ $(document).ready(function() {
 
   function startTyperBody() {
     $(".typer-body").typed({
-      strings: ["", "developer. ", "builder. ", "traveler. ", "fixer. ", "skier. ", "simplifier. "],
+      strings: ["", "builder. ", "traveler. ", "fixer. ", "skier. ", "simplifier. ", "developer. "],
       typeSpeed: 20,
       cursorChar: "\u258D",
-      backDelay: 1500,
-      loop: true
+      backDelay: 1500
     });
   }
 
