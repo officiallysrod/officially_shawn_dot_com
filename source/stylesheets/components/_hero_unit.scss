@@ -20,14 +20,14 @@
     align-items: flex-end;
     color: $font-color-white;
     display: flex;
-    text-align: center;
+    justify-content: center;
 
     h1 {
       font-size: 2em;
     }
 
     @include media($large-screen) {
-      justify-content: flex-end;
+      margin-bottom: ($base-spacing * 2);
 
       h1 {
         font-size: 4.5em;
