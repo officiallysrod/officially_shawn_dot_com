@@ -9,13 +9,16 @@
 @import "font-awesome";
 @import "components/navbar";
 @import "components/hero_unit";
+@import "components/projects";
+@import "components/modal";
+@import "components/badges";
 
 .main {
-  @include outer-container($medium-screen);
+  @include outer-container($large-screen);
   margin: $base-spacing;
 
   @include media($medium-screen) {
-    margin: 20px auto;
+    margin: ($base-spacing * 3) auto;
   }
 
 }
