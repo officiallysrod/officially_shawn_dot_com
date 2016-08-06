@@ -1,0 +1,29 @@
+---
+- name: OpinioNation
+  description: 'OpinioNation is an online community that connects people who have questions with people who have answers. The mantra of OpinioNation is: "Ask a question. Give an answer. Get involved." The site favors visual, bite-sized, fun, engagement.
+  OpinioNation was designed with a mobile-first approach so it looks great on your phone. The app was built with AngularJS, Ruby on Rails (serving primarily as the API layer), and PostgreSQL.'
+  url: http://opinionation.herokuapp.com
+  image_url: /images/project_assets/opinionation.jpg
+  technologies:
+    - Angular
+    - Ruby on Rails
+    - PostgreSQL
+
+- name: Fetch
+  description: "Fetch, a social network for dogs (and the owners who love them), was conceived at General Assembly during the Web Development Immersive program. Fetch gives dogs (and their owners) the opportunity to connect for doggy play dates.
+  Fetch was built with AngularJS, Ruby on Rails, and PostgreSQL. Fetch takes advantages of Rails 4's ActionController::Live in combination with Puma web server to stream one-to-one messages to users in realtime."
+  url: http://downtofetch.herokuapp.com
+  image_url: /images/project_assets/fetch.jpg
+  technologies:
+    - Angular
+    - Ruby on Rails
+    - PostgreSQL
+
+- name: WDiPSUM
+  description: "WDiPSUM is a simple little ipsum generator filled with inside jokes from the Web Development Immersive class I taught at General Assembly. Teaching a web developer bootcamp involves building LOTS of example CRUD applications to teach students the fundamentals of Rails and web development. Needless to say, when you're building a blog or a Reddit clone for the 500th time, an ipsum generator comes in handy!"
+  url: https://wdipsum.herokuapp.com
+  image_url: /images/project_assets/wdipsum.png
+  technologies:
+    - Angular
+    - Express
+    - Gulp
