@@ -1,0 +1,28 @@
+<footer class="footer" role="contentinfo">
+  <ul>
+    <li>
+      <% if current_page.data.landing_page %>
+        <%= link_to "About Me", "#about-me", class: "scroll-on-page-link" %>
+      <% else %>
+        <%= link_to "About Me", "/" %>
+      <% end %>
+    </li>
+    <li class="nav-link"><%= link_to "Projects", "/projects" %></li>
+    <li class="nav-link"><%= link_to "Connect", "/connect" %></li>
+  </ul>
+
+  <div class="footer-secondary-links">
+    <ul class="footer-social">
+      <li>
+        <a href="https://www.linkedin.com/in/shawnrodriguez" target="_blank"><i class="fa fa-linkedin"></i></a>
+      </li>
+      <li>
+        <a href="https://github.com/officiallysrod" target="_blank"><i class="fa fa-github"></i></a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/officiallysrod" target="_blank"><i class="fa fa-instagram"></i></a>
+      </li>
+      <li><a href="#"><i class="fa fa-envelope-o"></i></a></li>
+    </ul>
+  </div>
+</footer>
