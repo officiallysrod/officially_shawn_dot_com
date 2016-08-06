@@ -1,0 +1,26 @@
+section.connect {
+  @include media($medium-screen) {
+    @include span-columns(5);
+    @include shift(3.5);
+  }
+}
+
+.contact-methods {
+  ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  li {
+    @include margin($base-spacing);
+  }
+
+  a {
+    color: $base-font-color;
+
+    &:hover {
+      color: $medium-gray;
+    }
+  }
+
+}
