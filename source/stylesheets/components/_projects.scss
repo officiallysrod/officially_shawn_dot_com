@@ -4,15 +4,6 @@
   $flex-box-background: lighten($light-gray, 10%);
   $flex-box-gutter: 0.4em;
   $flex-box-width: 18em;
-  $flex-box-color: transparentize($base-font-color, 0.3);
-  $flex-box-top-colors:
-    $red,
-    $dark-blue,
-    $yellow,
-    $red,
-    $dark-blue,
-    $yellow,
-    #C7B9C7;
 
   @include clearfix;
   align-items: stretch;
@@ -30,49 +21,50 @@
     display: block;
     flex: 2 2 15em;
     margin: $flex-box-gutter;
-    padding: 1em 1em 2em 1em;
     text-decoration: none;
+  }
+
+}
+
+.hover-tile-outer {
+  $hover-tile-height: 10em;
+
+  background: url("/images/shawn-normal.jpg");
+  background-color: transparentize($yellow, 0.3);
+  background-position: top;
+  background-size: cover;
+  border: $base-border;
+  cursor: pointer;
+  margin-bottom: $base-line-height;
+
+  .hover-tile-container {
+    height: $hover-tile-height;
+    overflow: hidden;
+  }
+
+  .hover-tile-container:hover > .hover-tile {
+    transform: translate(0, -100%);
+  }
+
+  .hover-tile {
+    background: inherit;
+    color: white;
+    height: inherit;
+    overflow: hidden;
+    padding: $base-spacing;
     transition: all 0.2s ease-in-out;
+  }
 
-    @for $i from 1 to 7 { // assign colors from $flex-box-top-colors list
-      &:nth-child(#{$i}) {
-        $color-from-list: nth($flex-box-top-colors, $i);
-        border-top: 8px solid $color-from-list;
-
-        &:focus,
-        &:hover {
-          background-color: transparentize($color-from-list, 0.9);
-        }
-      }
-    }
-
-    h1 {
-
-    }
-
-    img {
-      display: block;
-      width: 100%;
-      margin: 0 auto 1em;
-      opacity: 0.8;
-    }
-
-    .flex-title {
-      color: $flex-box-color;
-      font-size: 1.2em;
-      margin-bottom: 0.5em;
-      margin-right: 0.5em;
-    }
+  .hover-tile-hidden {
+    background: transparentize(#000, 0.3);
 
     p {
-      color: transparentize($flex-box-color, 0.1);
-      line-height: 1.5em;
-      margin: auto;
+      color: transparentize(#fff, 0.3);
+      line-height: $base-line-height;
+    }
+
+    h4 {
+      margin: 0 0 0.5em 0;
     }
   }
-
-  .flex-box-big {
-    flex: 1 1 40em;
-  }
-
 }

@@ -15,10 +15,6 @@
     display: none;
   }
 
-  .modal-trigger {
-    padding: 0.8em 1em;
-  }
-
   .modal-fade-screen { // overlay
     @include position(fixed, 0);
     background-color: rgba(#000, 0.85);

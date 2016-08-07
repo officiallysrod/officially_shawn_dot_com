@@ -1,9 +1,14 @@
 <div class="flex-box modal">
 
   <label for="modal-<%= index %>">
-    <div class="modal-trigger">
-      <img src="<%= project.image_url %>" alt="<%= project.name %>">
-      <h1 class="flex-title"><%= project.name %></h1>
+    <div class="modal-trigger hover-tile-outer" style="background: url(<%= project.image_url %>); background-size: cover;">
+      <div class="hover-tile-container">
+        <div class="hover-tile hover-tile-visible"></div>
+        <div class="hover-tile hover-tile-hidden">
+          <h4><%= project.name %></h4>
+          <p><%= truncate_words(project.description, length: 12) %></p>
+        </div>
+      </div>
     </div>
   </label>
   <input class="modal-state" id="modal-<%= index %>" type="checkbox" />
