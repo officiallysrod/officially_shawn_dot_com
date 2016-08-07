@@ -1,11 +1,11 @@
 .contact-methods {
   ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   li {
-    @include margin($base-spacing);
+    flex: none;
   }
 
   a {
