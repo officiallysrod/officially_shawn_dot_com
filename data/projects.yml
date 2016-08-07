@@ -1,7 +1,35 @@
 ---
+- name: Officiallyshawn.com
+  description: "Officiallyshawn.com is my little corner of the internet. The site makes use of Middleman, an awesome tool for building static sites. If you like to party with Ruby/Rails/Sinatra/Padrino, then Middleman will feel very familiar. With no serious backend concerns to deal with here (my \"database\" is a YAML file!), I treat Officiallyshawn.com as a playground for diving deeper into front-end technologies I am interested in exploring. In particular, the site makes use of Thoughbot's great open-source SASS libraries (Bourbon, Bitters, Neat, and Refills), and a lot of Flexbox. The code is in a public repo on Github, so feel free to have a look."
+  url: https://github.com/officiallysrod/officiallyshawn_dot_com
+  image_url:
+  technologies:
+    - Middleman
+    - SASS
+    - Flexbox
+    - Bourbon
+    - Neat
+    - Refills
+    - jQuery
+
+- name: betterNOTE
+  description: "An OS X note-taking app for the Markdown-writing, Vim-loving folks out there!  Still in development. Not ready for prime time.
+  Okay, so the name is definitely a little cheeky. But let's set that aside and talk about the motivation for building this app. I'm an active Evernote user and generally I find it to be mostly, usually, kinda pretty alright. Sort of.
+  betterNOTE solves the two biggest pain points I experience with Evernote by adding support for Vim keybindings and Markdown support.
+  As I said, this project is still in development, but you can head over to Github to check out the repo and follow its progress."
+  url: https://github.com/officiallysrod/better_note
+  image_url:
+  technologies:
+    - Electron
+    - React
+    - ES2015
+    - IndexedDB
+    - Webpack
+    - Babel
+
 - name: OpinioNation
-  description: 'OpinioNation is an online community that connects people who have questions with people who have answers. The mantra of OpinioNation is: "Ask a question. Give an answer. Get involved." The site favors visual, bite-sized, fun, engagement.
-  OpinioNation was designed with a mobile-first approach so it looks great on your phone. The app was built with AngularJS, Ruby on Rails (serving primarily as the API layer), and PostgreSQL.'
+  description: "OpinioNation was my final project for General Assembly's Web Development Immersive program. It is an online community that connects people who have questions with people who have answers. The mantra of OpinioNation is: \"Ask a question. Give an answer. Get involved.\" The site favors visual, bite-sized, fun, engagement.
+  OpinioNation was designed with a mobile-first approach so it looks great on your phone. The app was built with AngularJS, Ruby on Rails (serving primarily as the API layer), and PostgreSQL."
   url: http://opinionation.herokuapp.com
   image_url: /images/project_assets/opinionation.jpg
   technologies:
