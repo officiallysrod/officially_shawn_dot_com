@@ -1,16 +1,9 @@
 <footer class="footer" role="contentinfo">
   <ul>
-    <li>
-      <% if current_page.data.landing_page %>
-        <%= link_to "About Me", "#about-me", class: "scroll-on-page-link" %>
-      <% else %>
-        <%= link_to "About Me", "/" %>
-      <% end %>
-    </li>
-    <li class="nav-link"><%= link_to "Projects", "/projects" %></li>
-    <li class="nav-link"><%= link_to "Connect", "/connect" %></li>
+    <li><%= link_to "About Me", "#about-me", class: "scroll-on-page-link" %></li>
+    <li><%= link_to "Projects", "#projects", class: "scroll-on-page-link" %></li>
+    <li><%= link_to "Connect", "#connect", class: "scroll-on-page-link" %></li>
   </ul>
-
   <div class="footer-secondary-links">
     <ul class="footer-social">
       <li>

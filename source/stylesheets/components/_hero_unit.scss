@@ -5,7 +5,6 @@
   background-size: cover;
   display: flex;
   flex: 1;
-  min-height: 25em;
   padding: 2em;
 
   @include media($large-screen) {
