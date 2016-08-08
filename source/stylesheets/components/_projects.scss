@@ -1,70 +1,38 @@
-.flex-boxes {
-  $flex-box-border-color: $light-gray;
-  $flex-box-border: 1px solid $flex-box-border-color;
-  $flex-box-background: lighten($light-gray, 10%);
-  $flex-box-gutter: 0.4em;
-  $flex-box-width: 18em;
-
-  @include clearfix;
-  align-items: stretch;
-  clear: both;
+.projects-container {
+  @include outer-container;
+  align-items: center;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: right;
+  flex: 1;
+  padding: 2em;
 
-  .flex-box {
-    align-self: stretch;
-    background: $flex-box-background;
-    border: $flex-box-border;
-    border-radius: $base-border-radius;
-    display: block;
-    flex: 2 2 15em;
-    margin: $flex-box-gutter;
-    text-decoration: none;
+  @include media($medium-screen) {
+    margin: 0;
+
+    section {
+      @include span-columns(8);
+      @include shift(2);
+    }
   }
 
 }
 
-.hover-tile-outer {
-  $hover-tile-height: 10em;
+.project {
+  @include clearfix;
+  @include margin($small-spacing null);
 
-  background: url("/images/shawn-normal.jpg");
-  background-color: transparentize($yellow, 0.3);
-  background-position: top;
-  background-size: cover;
-  border: $base-border;
-  cursor: pointer;
-  margin-bottom: $base-line-height;
-
-  .hover-tile-container {
-    height: $hover-tile-height;
-    overflow: hidden;
+  @include media($medium-screen) {
+    @include margin($base-spacing);
   }
+}
 
-  .hover-tile-container:hover > .hover-tile {
-    transform: translate(0, -100%);
+.project-image {
+  @include media($medium-screen) {
+    @include span-columns(3 of 8);
   }
+}
 
-  .hover-tile {
-    background: inherit;
-    color: white;
-    height: inherit;
-    overflow: hidden;
-    padding: $base-spacing;
-    transition: all 0.2s ease-in-out;
-  }
-
-  .hover-tile-hidden {
-    background: transparentize(#000, 0.3);
-
-    p {
-      color: transparentize(#fff, 0.3);
-      line-height: $base-line-height;
-    }
-
-    h4 {
-      margin: 0 0 0.5em 0;
-    }
+.project-description {
+  @include media($medium-screen) {
+    @include span-columns(5 of 8);
   }
 }

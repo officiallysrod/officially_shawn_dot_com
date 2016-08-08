@@ -1,52 +1,15 @@
-<div class="flex-box modal">
-
-  <label for="modal-<%= index %>">
-    <div class="modal-trigger hover-tile-outer" style="background: url(<%= project.image_url %>); background-size: cover;">
-      <div class="hover-tile-container">
-        <div class="hover-tile hover-tile-visible"></div>
-        <div class="hover-tile hover-tile-hidden">
-          <h4><%= project.name %></h4>
-          <p><%= truncate_words(project.description, length: 12) %></p>
-        </div>
-      </div>
-    </div>
-  </label>
-  <input class="modal-state" id="modal-<%= index %>" type="checkbox" />
-
-  <div class="modal-fade-screen">
-    <div class="modal-inner">
-      <div class="modal-close" for="modal-<%= index %>"></div>
-      <hr>
-      <h1 class="modal-title"><%= project.name %></h1>
-      <div class="modal-intro">
-        <% project.technologies.each do |technology| %>
-          <span class="badge-error"><%= technology %></span>
-        <% end %>
-      </div>
-      <p class="modal-content"><%= project.description %></p>
-      <hr>
-      <a href="<%= project.url %>" class="button button-default" target="_blank">Check it out</a>
-    </div>
+<div class="project">
+  <div class="project-image">
+    <img src="/images/project_assets/imac.png" alt="<=% project.name %>" />
   </div>
-
+  <div class="project-description">
+    <article class="type-system-sans">
+      <h1><%= project.name %></h1>
+      <p><%= project.description %></p>
+      <% project.technologies.each do |technology| %>
+        <span class="badge-error"><%= technology %></span>
+      <% end %>
+    </article>
+  </div>
 </div>
-
-<script type="text/javascript">
-  $(function() {
-    $("#modal-<%= index %>").on("change", function() {
-      if ($(this).is(":checked")) {
-        $("body").addClass("modal-open");
-      } else {
-        $("body").removeClass("modal-open");
-      }
-    });
-
-    $(".modal-fade-screen, .modal-close").on("click", function() {
-      $(".modal-state:checked").prop("checked", false).change();
-    });
-
-    $(".modal-inner").on("click", function(e) {
-      e.stopPropagation();
-    });
-  });
-</script>
+<hr>

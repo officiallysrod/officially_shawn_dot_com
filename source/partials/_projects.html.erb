@@ -1,11 +1,11 @@
-<main class="main-content" id="projects">
+<main class="projects-container" id="projects">
   <section>
     <article class="type-system-sans">
       <p class="type">Projects</p>
       <h1>Some Things I've Built</h1>
     </article>
 
-    <div class="flex-boxes">
+    <div class="projects xflex-boxes">
       <% data.projects.each_with_index do |project, index| %>
         <%= partial "partials/project", locals: {project: project, index: index} %>
       <% end %>
