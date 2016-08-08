@@ -1,9 +1,10 @@
 source "https://rubygems.org"
 
-gem "middleman", '>= 4.0.0'
+gem "middleman", ">= 4.0.0"
 gem "middleman-livereload"
-gem "middleman-sprockets", '~> 4.0'
+gem "middleman-sprockets", "~> 4.0"
 gem "middleman-autoprefixer"
+gem "middleman-s3_sync", ">= 4.0.3"
 
 gem "bitters"
 gem "bourbon"
