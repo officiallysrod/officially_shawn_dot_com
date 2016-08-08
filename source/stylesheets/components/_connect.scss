@@ -1,3 +1,22 @@
+.connect-container {
+  background: image-url("shawn-laughing-2.jpg");
+  background-position: center;
+  background-size: cover;
+
+  @include media($large-screen) {
+    background: image-url("shawn-laughing-2.jpg");
+    background-position: left;
+    background-size: cover;
+  }
+
+}
+
+.connect-container > section > article > h1,
+.connect-container > section > article > h2,
+.connect-container > section > article > p {
+  color: $font-color-white;
+}
+
 .contact-methods {
   ul {
     display: flex;
@@ -9,7 +28,7 @@
   }
 
   a {
-    color: $base-font-color;
+    color: $font-color-white;
 
     &:hover {
       color: $medium-gray;

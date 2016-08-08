@@ -1,0 +1,18 @@
+.about-me {
+  background: image-url("shawn-laughing.jpg");
+  background-position: center;
+  background-size: cover;
+
+  @include media($large-screen) {
+    background: image-url("shawn-laughing.jpg");
+    background-position: right;
+    background-size: cover;
+  }
+
+}
+
+.about-me > section > article > h1,
+.about-me > section > article > h3,
+.about-me > section > article > p {
+  color: $font-color-white;
+}
