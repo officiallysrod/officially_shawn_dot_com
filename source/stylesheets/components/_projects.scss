@@ -16,6 +16,7 @@
   .flex-box {
     align-self: stretch;
     background: $flex-box-background;
+    border: $flex-box-border;
     border-radius: $base-border-radius;
     display: block;
     flex: 2 2 15em;
