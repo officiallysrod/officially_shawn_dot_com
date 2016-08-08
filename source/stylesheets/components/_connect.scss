@@ -24,14 +24,21 @@
   }
 
   li {
-    flex: none;
+    display: flex;
+    flex: 1;
+    height: 3em;
   }
 
   a {
     color: $font-color-white;
+    flex: 1;
+    text-align: center;
 
     &:hover {
+      @include margin(null $base-spacing);
+      border-bottom: 5px solid $medium-gray;
       color: $medium-gray;
+      padding-bottom: $small-spacing;
     }
   }
 
