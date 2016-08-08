@@ -5,6 +5,7 @@ gem "middleman-livereload"
 gem "middleman-sprockets", "~> 4.0"
 gem "middleman-autoprefixer"
 gem "middleman-s3_sync", ">= 4.0.3"
+gem "mime-types" # for s3_sync deploys
 
 gem "bitters"
 gem "bourbon"
