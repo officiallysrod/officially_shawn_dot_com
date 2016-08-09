@@ -1,4 +1,18 @@
 ---
+- name: CareerArc
+  description: "I worked with CareerArc, the industry leader in social recruiting and outplacement services, to help them upgrade their social recruiting platform. A significant amount of my time with them was spent working in Ruby on their backend acquisition engine&mdash;one of the core technologies behind the company's social recruiting platform.
+  <br><br>
+  I also provided full stack Rails development, helping the company upgrade their social recruiting platform from Rails 3 to Rails 4. In addition to collaborating on the re-architecture of some of the key data models, I was responsible for building out the web-based interface for the company's acquisition engine&mdash;a key tool used daily by account managers to monitor and configure clients' acquisition implementations."
+  url: http://www.careerarc.com/
+  image_url: /images/project_assets/careerarc.png
+  technologies:
+    - Ruby
+    - Rails
+    - HTML
+    - CSS
+    - jQuery
+    - Regex
+    - AWS S3
 - name: Officiallyshawn.com
   description: "Officiallyshawn.com is my little corner of the internet. The site makes use of Middleman, an awesome tool for building static sites. If you like to party with Ruby/Rails/Sinatra/Padrino, then Middleman will feel very familiar.
   <br><br>
