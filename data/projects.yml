@@ -33,9 +33,9 @@
 - name: OpinioNation
   description: "OpinioNation was my final project for General Assembly's Web Development Immersive program. It is an online community that connects people who have questions with people who have answers. The mantra of OpinioNation is: \"Ask a question. Give an answer. Get involved.\" The site favors visual, bite-sized, fun, engagement.
   <br><br>
-  OpinioNation was designed with a mobile-first approach so it looks great on your phone. The app was built with AngularJS, Ruby on Rails (serving primarily as the API layer), and PostgreSQL."
+  The app was built with AngularJS, Ruby on Rails (serving primarily as the API layer), and PostgreSQL."
   url: http://opinionation.herokuapp.com
-  image_url: /images/project_assets/opinionation.jpg
+  image_url: /images/project_assets/opinionation.png
   technologies:
     - Angular
     - Ruby on Rails
@@ -46,7 +46,7 @@
   <br><br>
   Fetch was built with AngularJS, Ruby on Rails, and PostgreSQL. Fetch takes advantages of Rails 4's ActionController::Live in combination with Puma web server and Redis to stream one-to-one messages to users in realtime."
   url: http://downtofetch.herokuapp.com
-  image_url: /images/project_assets/fetch.jpg
+  image_url: /images/project_assets/fetch.png
   technologies:
     - Angular
     - Ruby on Rails
