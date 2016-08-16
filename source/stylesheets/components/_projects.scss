@@ -3,7 +3,7 @@
   padding: 2em;
 
   @include media($medium-screen) {
-    margin: 0;
+    margin: 0 auto;
 
     section {
       @include span-columns(8);
