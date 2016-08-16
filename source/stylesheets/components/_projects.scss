@@ -1,8 +1,5 @@
 .projects-container {
   @include outer-container;
-  align-items: center;
-  display: flex;
-  flex: 1;
   padding: 2em;
 
   @include media($medium-screen) {
@@ -18,10 +15,18 @@
 
 .project {
   @include clearfix;
-  @include margin($small-spacing null);
+  @include margin($base-spacing null);
+  @include padding(null null $base-spacing null);
+  border-bottom: $base-border;
 
   @include media($medium-screen) {
-    @include margin($base-spacing);
+    &:nth-child(even) {
+
+      .project-image {
+        @include margin(null 0 $base-spacing null);
+        float: right;
+      }
+    }
   }
 }
 
