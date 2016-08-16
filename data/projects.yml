@@ -16,6 +16,7 @@
 
 - name: betterNOTE
   description: "An OS X note-taking app for the Markdown-writing, Vim-loving folks out there!  Still in development. Not ready for prime time.
+  <br><br>
   Okay, so the name is definitely a little cheeky. But let's set that aside and talk about the motivation for building this app. I'm an active Evernote user and generally I find it to be mostly, usually, kinda pretty alright. Sort of.
   <br><br>
   betterNOTE solves the two biggest pain points I experience with Evernote by adding support for Vim keybindings and Markdown support.
