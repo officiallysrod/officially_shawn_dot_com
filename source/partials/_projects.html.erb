@@ -4,7 +4,7 @@
       <p class="type">Projects</p>
     </article>
 
-    <div class="projects xflex-boxes">
+    <div class="projects">
       <% data.projects.each_with_index do |project, index| %>
         <%= partial "partials/project", locals: {project: project, index: index} %>
       <% end %>
