@@ -1,0 +1,6 @@
+#!/bin/sh
+
+set -e
+
+middleman build
+middleman s3_sync
