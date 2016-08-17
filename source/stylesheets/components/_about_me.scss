@@ -1,10 +1,9 @@
 .about-me {
-  background: image-url("shawn-laughing.jpg");
+  background: image-url("shawn-about-me.jpg");
   background-position: center;
   background-size: cover;
 
   @include media($large-screen) {
-    background: image-url("shawn-laughing.jpg");
     background-position: right;
     background-size: cover;
   }

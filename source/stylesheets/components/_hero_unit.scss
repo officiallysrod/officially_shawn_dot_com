@@ -1,6 +1,6 @@
 .hero {
   align-items: stretch;
-  background: image-url("shawn-normal.jpg");
+  background: image-url("shawn-hero-unit-small.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -8,7 +8,7 @@
   padding: 2em;
 
   @include media($large-screen) {
-    background: image-url("shawn-wide.jpg");
+    background: image-url("shawn-hero-unit.jpg");
     background-position: left;
     background-size: cover;
     min-height: 35em;

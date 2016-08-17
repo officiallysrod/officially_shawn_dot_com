@@ -1,10 +1,9 @@
 .connect-container {
-  background: image-url("shawn-laughing-2.jpg");
+  background: image-url("shawn-connect.jpg");
   background-position: center;
   background-size: cover;
 
   @include media($large-screen) {
-    background: image-url("shawn-laughing-2.jpg");
     background-position: left;
     background-size: cover;
   }
