@@ -16,6 +16,8 @@ header.navigation {
 
   background-color: $navigation-background;
   border-bottom: 1px solid darken($navigation-background, 10);
+  font-family: $secondary-font-family;
+  font-weight: 200;
   min-height: $navigation-height;
   position: fixed;
   top: 0;
