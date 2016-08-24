@@ -9,7 +9,7 @@
 
   @include media($medium-screen) {
     align-items: center;
-    background: image-url("shawn-hero-unit-red.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), image-url("shawn-hero-unit-red.jpg");
     background-position: left;
     background-size: cover;
   }
@@ -21,17 +21,24 @@
 
   article {
     display: none;
-    font-size: 1.1em;
 
     a {
       @include margin($base-spacing null null null);
       @include padding(($small-spacing / 3) ($base-spacing * 2));
       border: 1px solid $white;
       color: $font-color-white;
+      transition: background-color ($base-duration * 2) ease-in;
+
+      &:hover {
+        background: $white;
+        color: $red;
+      }
     }
 
     h3 {
       border-bottom: 1px solid $white;
+      margin-bottom: $small-spacing;
+      padding-bottom: ($small-spacing / 2);
     }
 
     p {
