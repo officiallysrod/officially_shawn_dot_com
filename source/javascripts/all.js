@@ -1,5 +1,5 @@
 //= require jquery
-//= require typed.js.js
+//= require flowtype
 //= require navbar
+//= require flowtype-config
 //= require scroll-on-page
-//= require hero-typer

@@ -1,40 +1,87 @@
 .hero {
-  align-items: stretch;
-  background: image-url("shawn-hero-unit-small.jpg");
+  align-items: flex-end;
+  background: image-url("shawn-hero-unit-red-small.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
   flex: 1;
   padding: 2em;
 
-  @include media($large-screen) {
-    background: image-url("shawn-hero-unit.jpg");
+  @include media($medium-screen) {
+    align-items: center;
+    background: image-url("shawn-hero-unit-red.jpg");
     background-position: left;
     background-size: cover;
-    min-height: 35em;
+  }
+}
+
+.hero-content {
+  @include span-columns(12);
+  color: $font-color-white;
+
+  article {
+    display: none;
+    font-size: 1.1em;
+
+    h3 {
+      border-bottom: 1px solid $white;
+    }
+
+    p {
+      @include margin(null null 0 null);
+      color: $font-color-white;
+    }
+
+    p.tagline {
+      @include margin($small-spacing null null null);
+      font-size: 1.1em;
+      font-style: italic;
+    }
   }
 
-  .hero-content {
+  header {
     @include span-columns(12);
-    align-items: flex-end;
-    color: $font-color-white;
-    display: flex;
-    justify-content: center;
 
     h1 {
-      font-size: 2em;
+      font-family: "Abril Fatface";
+      font-size: 2.5em;
     }
-
-    @include media($large-screen) {
-      margin-bottom: ($base-spacing * 2);
-
-      h1 {
-        font-size: 4.5em;
-      }
-    }
-
   }
 
+  @include media($medium-screen) {
+    @include margin(20em null null null);
+    header {
+      @include span-columns(10 of 12);
+      @include shift(1);
+
+      h1 {
+        font-size: 4.25em;
+      }
+    }
+  }
+
+  @include media($large-screen) {
+    @include margin($base-spacing);
+    @include margin(20em null null null);
+    align-items: center;
+    display: flex;
+
+    article {
+      @include span-columns(3);
+    }
+
+    header {
+      @include span-columns(6);
+      @include shift(0.5);
+
+      h1 {
+        @include margin(null null 0 null);
+        font-size: 4.5em;
+        letter-spacing: 2px;
+        text-align: left;
+      }
+    }
+  }
 }
 
 .typed-cursor {
@@ -46,5 +93,4 @@
     50% { opacity: 0; }
     100% { opacity: 1; }
   }
-
 }
