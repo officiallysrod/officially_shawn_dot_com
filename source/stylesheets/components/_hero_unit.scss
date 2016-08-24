@@ -1,6 +1,6 @@
 .hero {
   align-items: flex-end;
-  background: image-url("shawn-hero-unit-red-small.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), image-url("shawn-hero-unit-red-small.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
