@@ -23,6 +23,13 @@
     display: none;
     font-size: 1.1em;
 
+    a {
+      @include margin($base-spacing null null null);
+      @include padding(($small-spacing / 3) ($base-spacing * 2));
+      border: 1px solid $white;
+      color: $font-color-white;
+    }
+
     h3 {
       border-bottom: 1px solid $white;
     }
@@ -33,7 +40,7 @@
     }
 
     p.tagline {
-      @include margin($small-spacing null null null);
+      @include margin($small-spacing null);
       font-size: 1.1em;
       font-style: italic;
     }
@@ -84,7 +91,7 @@
   }
 }
 
-.typed-cursor {
+.blinking-cursor {
   animation: blink 0.7s infinite;
   opacity: 1;
 
