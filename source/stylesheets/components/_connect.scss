@@ -3,9 +3,21 @@
   background-position: center;
   background-size: cover;
 
-  @include media($large-screen) {
+  @include media($medium-screen) {
     background-position: left;
     background-size: cover;
+
+    section {
+      @include span-columns(5.5);
+      @include shift(6.5);
+    }
+  }
+
+  @include media($large-screen) {
+    section {
+      @include span-columns(4);
+      @include shift(6.5);
+    }
   }
 
 }

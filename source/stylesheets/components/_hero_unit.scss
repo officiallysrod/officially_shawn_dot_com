@@ -57,7 +57,7 @@
     @include span-columns(12);
 
     h1 {
-      font-family: "Abril Fatface";
+      font-family: $heading-font-family;
       font-size: 2.5em;
     }
   }
