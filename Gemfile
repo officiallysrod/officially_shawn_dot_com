@@ -10,7 +10,7 @@ gem "mime-types" # for s3_sync deploys
 gem "bitters"
 gem "bourbon"
 gem "neat"
-gem "font-awesome-sass"
+gem "font-awesome-sass", github: "mfo/font-awesome-sass", branch: "US/4.6.3"
 
 source "https://rails-assets.org" do
   gem "rails-assets-jquery"

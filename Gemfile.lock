@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/mfo/font-awesome-sass.git
+  revision: 0cfa23e2b1c0bbf8c2140d43fb50f0e37fd4ee94
+  branch: US/4.6.3
+  specs:
+    font-awesome-sass (4.6.3)
+      sass (>= 3.2)
+
 GEM
   remote: https://rubygems.org/
   remote: https://rails-assets.org/
@@ -56,8 +64,6 @@ GEM
     fog-xml (0.1.2)
       fog-core
       nokogiri (~> 1.5, >= 1.5.11)
-    font-awesome-sass (4.6.2)
-      sass (>= 3.2)
     formatador (0.2.5)
     haml (4.0.7)
       tilt
@@ -177,7 +183,7 @@ PLATFORMS
 DEPENDENCIES
   bitters
   bourbon
-  font-awesome-sass
+  font-awesome-sass!
   middleman (>= 4.0.0)
   middleman-autoprefixer
   middleman-livereload
