@@ -5,7 +5,7 @@ $large-screen: 1025px;
 // Typography
 $base-font-family: "PT Sans", sans-serif;
 $secondary-font-family: "Titillium Web", sans-serif;
-$heading-font-family: "Abril Fatface", serif;
+$heading-font-family: $secondary-font-family;
 
 // Font Sizes
 $base-font-size: 1em;

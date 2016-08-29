@@ -1,33 +1,84 @@
 .about-me {
-  background: image-url("shawn-about-me.jpg");
-  background-position: center;
-  background-size: cover;
-
-  @include media($medium-screen) {
-    background-position: right;
-    background-size: cover;
-
-    section {
-      @include span-columns(5.5);
-      @include shift(0.5);
-    }
-  }
-
-  @include media($large-screen) {
-    section {
-      @include span-columns(4);
-      @include shift(2.5);
-    }
-
-    .about-me-intro {
-      display: none;
-    }
-  }
-
+  flex-direction: column;
 }
 
-.about-me > section > article > h1,
-.about-me > section > article > h3,
-.about-me > section > article > p {
+section.body-copy {
+  @include margin($base-spacing $small-spacing);
+  flex: 2;
+
+  h1,
+  span {
+    color: $red;
+  }
+
+  p:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+
+  @include media($medium-screen) {
+    @include span-columns(4.5);
+    align-items: center;
+    display: flex;
+  }
+}
+
+section.pull-quote {
+  @include margin(0);
+  @include padding($small-spacing);
+  background: $dark-blue;
   color: $font-color-white;
+
+  a {
+    color: $red;
+    border-bottom: 1px dotted $red;
+    &:hover {
+      color: darken($red, 10%);
+    }
+  }
+
+  blockquote {
+    @include margin($small-spacing);
+  }
+
+  cite {
+    align-items: center;
+    display: flex;
+  }
+
+  img {
+    @include size(50px);
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: $base-spacing;
+  }
+
+  p {
+    font-family: $secondary-font-family;
+  }
+
+  span {
+    display: block;
+  }
+
+  .quote-attribution {
+    display: inline-block;
+  }
+
+  @include media($medium-screen) {
+    blockquote {
+      @include span-columns(6);
+      @include shift(3);
+
+      p {
+        font-size: 1.1em;
+      }
+
+    }
+  }
+}
+
+@include media($large-screen) {
+  .about-me-intro {
+    display: none;
+  }
 }

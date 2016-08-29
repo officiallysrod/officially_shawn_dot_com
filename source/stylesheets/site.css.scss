@@ -21,7 +21,6 @@
 
 .full-height-container {
   display: flex;
-  flex-direction: column;
   min-height: 100%;
 }
 
@@ -29,14 +28,9 @@
   align-items: center;
   display: flex;
   flex: 1;
-  padding: 2em;
 
   @include media($medium-screen) {
     margin: 0;
-    section {
-      // @include span-columns(5);
-      // @include shift(3.5);
-    }
   }
 
 }
