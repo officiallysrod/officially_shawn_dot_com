@@ -1,22 +1,29 @@
 .connect-container {
-  background: image-url("shawn-connect.jpg");
+  background: image-url("shawn-connect-yellow.jpg");
   background-position: center;
   background-size: cover;
 
+  section {
+    @include margin($base-spacing);
+    p {
+      font-size: 1.2em;
+    }
+  }
+
   @include media($medium-screen) {
-    background-position: left;
+    background-position: right;
     background-size: cover;
 
     section {
-      @include span-columns(5.5);
-      @include shift(6.5);
+      @include span-columns(5);
+      @include shift(1);
     }
   }
 
   @include media($large-screen) {
     section {
-      @include span-columns(4);
-      @include shift(6.5);
+      @include span-columns(3.5);
+      @include shift(2);
     }
   }
 
@@ -29,28 +36,24 @@
 }
 
 .contact-methods {
-  ul {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  li {
-    display: flex;
-    flex: 1;
-    height: 3em;
-  }
-
   a {
-    color: $font-color-white;
-    flex: 1;
-    text-align: center;
+    color: $yellow;
+    transition: color ($base-duration) ease-in;
 
     &:hover {
-      @include margin(null $base-spacing);
-      border-bottom: 5px solid $medium-gray;
-      color: $medium-gray;
-      padding-bottom: $small-spacing;
+      color: $font-color-white;
+
+      .fa-inverse {
+        color: lighten($dark-blue, 10%);
+      }
     }
   }
 
+  li {
+    display: inline;
+  }
+
+  .fa-inverse {
+    transition: color ($base-duration) ease-in;
+  }
 }
