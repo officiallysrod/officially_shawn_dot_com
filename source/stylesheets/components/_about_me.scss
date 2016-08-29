@@ -3,6 +3,7 @@
 }
 
 section.body-copy {
+  @include outer-container;
   @include margin($base-spacing $small-spacing);
   flex: 2;
 
@@ -16,17 +17,28 @@ section.body-copy {
   }
 
   @include media($medium-screen) {
-    @include span-columns(4.5);
     align-items: center;
     display: flex;
+
+    article {
+      @include span-columns(6);
+      @include shift(3);
+    }
+  }
+
+  @include media($large-screen) {
+    article {
+      @include span-columns(4);
+      @include shift(4);
+    }
   }
 }
 
 section.pull-quote {
-  @include margin(0);
   @include padding($small-spacing);
   background: $dark-blue;
   color: $font-color-white;
+  width: 100%;
 
   a {
     border-bottom: 1px dotted $red;
@@ -61,19 +73,30 @@ section.pull-quote {
     display: block;
   }
 
+  .blockquote-container {
+    @include outer-container;
+  }
+
   .quote-attribution {
     display: inline-block;
   }
 
   @include media($medium-screen) {
     blockquote {
-      @include span-columns(6);
-      @include shift(3);
+      @include span-columns(8);
+      @include shift(2);
 
       p {
         font-size: 1.1em;
       }
 
+    }
+  }
+
+  @include media($large-screen) {
+    blockquote {
+      @include span-columns(6);
+      @include shift(3);
     }
   }
 }
