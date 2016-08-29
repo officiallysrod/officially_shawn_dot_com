@@ -29,8 +29,9 @@ section.pull-quote {
   color: $font-color-white;
 
   a {
-    color: $red;
     border-bottom: 1px dotted $red;
+    color: $red;
+
     &:hover {
       color: darken($red, 10%);
     }
