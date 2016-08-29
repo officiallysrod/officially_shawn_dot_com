@@ -1,6 +1,6 @@
 .hero {
   align-items: flex-end;
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), image-url("shawn-hero-unit-red-small.jpg");
+  background: image-url("shawn-hero-unit-red-small.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -9,7 +9,7 @@
 
   @include media($medium-screen) {
     align-items: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), image-url("shawn-hero-unit-red.jpg");
+    background: image-url("shawn-hero-unit-red.jpg");
     background-position: left;
     background-size: cover;
   }
