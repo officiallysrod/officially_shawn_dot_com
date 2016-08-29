@@ -29,4 +29,16 @@ $(document).ready(function() {
       }
     });
   });
+
+  var previous = 0;
+  var $window = $(window);
+  var $navbar = $('.navigation');
+
+  $window.on('scroll', function(){
+    var scrollTop = $window.scrollTop();
+    if (scrollTop > ($navbar.height() / 2)) {
+      $navbar.toggleClass('hidden', scrollTop > previous);
+      previous = scrollTop;
+    }
+  });
 });

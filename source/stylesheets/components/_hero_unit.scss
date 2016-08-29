@@ -1,5 +1,10 @@
 $hero-font: "Abril Fatface", serif;
 
+.hero-container {
+  background: $red;
+  padding-top: 60px;
+}
+
 .hero {
   align-items: flex-end;
   background: image-url("shawn-hero-unit-red-small.jpg");

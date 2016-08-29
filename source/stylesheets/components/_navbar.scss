@@ -18,12 +18,17 @@ header.navigation {
   border-bottom: 1px solid darken($navigation-background, 10);
   font-family: $secondary-font-family;
   font-weight: 200;
+  left: 0;
   min-height: $navigation-height;
   position: fixed;
   top: 0;
-  left: 0;
+  transition: transform 0.7s $ease-in-out-quint;
   width: 100%;
   z-index: 999;
+
+  &.hidden {
+    transform: translateY(-100%);
+  }
 
   .navigation-wrapper {
     @include clearfix;
