@@ -1,8 +1,9 @@
 header.navigation {
   $navigation-padding: 1em;
-  $navigation-background: $dark-blue;
-  $navigation-color: transparentize(white, 0.3);
-  $navigation-color-hover: white;
+  $navigation-background: $base-background-color;
+  $navigation-color: $font-color-white;
+  $navigation-color-dark: $dark-blue;
+  $navigation-color-hover: transparentize($dark-blue, 0.3);
   $navigation-height: 60px;
   $navigation-nav-button-background: $action-color;
   $navigation-nav-button-background-hover: lighten($navigation-background, 10%);
@@ -14,8 +15,6 @@ header.navigation {
   $navigation-submenu-width: 12em;
   $horizontal-bar-mode: $large-screen;
 
-  background-color: $navigation-background;
-  border-bottom: 1px solid darken($navigation-background, 10);
   font-family: $secondary-font-family;
   font-weight: 200;
   left: 0;
@@ -25,6 +24,22 @@ header.navigation {
   transition: transform 0.7s $ease-in-out-quint;
   width: 100%;
   z-index: 999;
+
+  &.light-background {
+    background-color: $navigation-background;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1);
+
+    ul li.nav-link {
+      background: $navigation-background;
+    }
+
+    ul li.nav-link a,
+    .logo,
+    .navigation-menu-button {
+      color: $navigation-color-dark;
+    }
+  }
+
 
   &.hidden {
     transform: translateY(-100%);
@@ -107,7 +122,7 @@ header.navigation {
   // The nav items
 
   ul li.nav-link {
-    background: $navigation-background;
+    // background: $navigation-background;
     display: block;
     line-height: $navigation-height;
     overflow: hidden;
@@ -284,5 +299,4 @@ header.navigation {
       float: right;
     }
   }
-
 }

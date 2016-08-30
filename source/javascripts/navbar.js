@@ -33,12 +33,19 @@ $(document).ready(function() {
   var previous = 0;
   var $window = $(window);
   var $navbar = $('.navigation');
+  var navbarHeight = $navbar.height();
+  var heroUnitHeight = $('.hero-container').height();
 
   $window.on('scroll', function(){
     var scrollTop = $window.scrollTop();
-    if (scrollTop > ($navbar.height() / 2)) {
+    if (scrollTop > (navbarHeight / 2)) {
       $navbar.toggleClass('hidden', scrollTop > previous);
       previous = scrollTop;
+    }
+    if (scrollTop > (heroUnitHeight / 2)) {
+      $navbar.addClass('light-background');
+    } else {
+      $navbar.removeClass('light-background');
     }
   });
 });
